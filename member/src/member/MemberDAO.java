@@ -42,7 +42,7 @@ public class MemberDAO {
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
 			
-			if(rs.next()) {	// 조건식을 만족하는 데이터를 구해홈
+			if(rs.next()) {	// 조건식을 만족하는 데이터를 구해옴
 				result = 1;	// 중복 ID
 			}else {
 				result = -1;	// 사용 가능한 ID

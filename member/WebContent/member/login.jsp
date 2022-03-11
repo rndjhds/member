@@ -17,7 +17,7 @@
 		session.setAttribute("id", member.getId());	// 세션으로 공유설정
 %>		
 	<script>
-		alert("로그인 성공");
+		alert("로그인 성공"); 
 		location.href="main.jsp";
 	</script>
 <% }else{	// 회원인증 실패 	%>

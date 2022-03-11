@@ -6,12 +6,11 @@
 <script>
 	$(function(){
 		$("#close1").click(function(){	// 중복 ID 버튼 클릭
-			opener.$("id").val("").focus();
+			opener.$("#id").val("").focus();	// opener는 부모창을 의미한다.
 			window.close();
 		});
-	});
-		$("#close2").click(function(){	// 사용가능한 ID 버튼 클릭
-			opener.$("passwd").val("").focus();
+		$("#close2").click(function(){	// 사용가능한 ID버튼 클릭
+			opener.$("#passwd").focus();
 			window.close();
 		});
 	});
