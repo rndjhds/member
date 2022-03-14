@@ -1,6 +1,6 @@
-<%@page import="member.MemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="member.MemberDAO"%>
 
 <% 
 	request.setCharacterEncoding("utf-8");
@@ -11,7 +11,7 @@
 
 <%
 	MemberDAO dao = MemberDAO.getInstance();
-	int result = dao.membercheck(member);	// 회원 인증 처리
+	int result = dao.memberCheck(member);	// 회원 인증 처리
 	
 	if(result==1){	// 회원인증 성공
 		session.setAttribute("id", member.getId());	// 세션으로 공유설정

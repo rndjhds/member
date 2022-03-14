@@ -27,7 +27,7 @@ $(document).ready(function(){
 				$.ajax({
 					type : "post",	// get, post, put, delete
 					url : "idcheck1.jsp",
-					data : {"id" : id},
+					data : {"id" : id},	// JSON 형태
 					success : function(data){
 						alert(data);
 						if(data==1){	// 중복 ID
